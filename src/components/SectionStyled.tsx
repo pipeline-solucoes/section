@@ -41,9 +41,23 @@ export const ContentSafeSection = styled('div')(({theme}) => ({
   width: '100%',  
   zIndex: '99', 
  
-  [theme.breakpoints.between(0, 'sm')]: { margin: '0 15px', padding: '30px 0', },
-  [theme.breakpoints.up('sm')]: { margin: '0 30px', padding: '30px 0', },
-  [theme.breakpoints.up('md')]: { margin: '0 30px', padding: '60px 0', },
-  [theme.breakpoints.up('lg')]: { margin: '0 100px', padding: '60px 0', },
-  [theme.breakpoints.up('xl')]: { margin: '0 170px', padding: '60px 0', },  
+  [theme.breakpoints.between(0, 'sm')]: { 
+    margin: theme.pipelinesolucoes?.safeArea?.xs?.margin ?? '0', 
+    padding: theme.pipelinesolucoes?.safeArea?.xs?.padding ?? '0' },
+
+  [theme.breakpoints.up('sm')]: { 
+    margin: theme.pipelinesolucoes?.safeArea?.sm?.margin ?? '0', 
+    padding: theme.pipelinesolucoes?.safeArea?.sm?.padding ?? '0' },
+
+  [theme.breakpoints.up('md')]: { 
+    margin: theme.pipelinesolucoes?.safeArea?.md?.margin ?? '0', 
+    padding: theme.pipelinesolucoes?.safeArea?.md?.padding ?? '0' },
+
+  [theme.breakpoints.up('lg')]: { 
+    margin: theme.pipelinesolucoes?.safeArea?.lg?.margin ?? '0', 
+    padding: theme.pipelinesolucoes?.safeArea?.lg?.padding ?? '0' },
+
+  [theme.breakpoints.up('xl')]: { 
+    margin: theme.pipelinesolucoes?.safeArea?.xl?.margin ?? '0', 
+    padding: theme.pipelinesolucoes?.safeArea?.xl?.padding ?? '0' }, 
 }));

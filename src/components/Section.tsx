@@ -19,9 +19,7 @@ const ContainerSection = styled('section', {
   maxWidth: '100%',
   zIndex: '0',   
   padding: padding,
-  background: background,  
-
-  
+  background: background, 
 }));
 
 const DivStyle = styled('div', {
