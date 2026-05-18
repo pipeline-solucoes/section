@@ -43,21 +43,32 @@ export const ContentSafeSection = styled('div')(({theme}) => ({
  
   [theme.breakpoints.between(0, 'sm')]: { 
     margin: theme.pipelinesolucoes?.safeArea?.xs?.margin ?? '0', 
-    padding: theme.pipelinesolucoes?.safeArea?.xs?.padding ?? '0' },
+    padding: theme.pipelinesolucoes?.safeArea?.xs?.padding ?? '0',
+    maxWidth: theme.pipelinesolucoes?.safeArea?.xs?.maxWidth ?? '100%',
+  },
 
   [theme.breakpoints.up('sm')]: { 
     margin: theme.pipelinesolucoes?.safeArea?.sm?.margin ?? '0', 
     padding: theme.pipelinesolucoes?.safeArea?.sm?.padding ?? '0' },
+    maxWidth: theme.pipelinesolucoes?.safeArea?.sm?.maxWidth ?? '100%',
 
   [theme.breakpoints.up('md')]: { 
     margin: theme.pipelinesolucoes?.safeArea?.md?.margin ?? '0', 
-    padding: theme.pipelinesolucoes?.safeArea?.md?.padding ?? '0' },
-
+    padding: theme.pipelinesolucoes?.safeArea?.md?.padding ?? '0', 
+    maxWidth: theme.pipelinesolucoes?.safeArea?.md?.maxWidth ?? '100%',
+  },
+    
   [theme.breakpoints.up('lg')]: { 
     margin: theme.pipelinesolucoes?.safeArea?.lg?.margin ?? '0', 
-    padding: theme.pipelinesolucoes?.safeArea?.lg?.padding ?? '0' },
+    padding: theme.pipelinesolucoes?.safeArea?.lg?.padding ?? '0', 
+    maxWidth: theme.pipelinesolucoes?.safeArea?.lg?.maxWidth ?? '100%',
+  },
 
   [theme.breakpoints.up('xl')]: { 
     margin: theme.pipelinesolucoes?.safeArea?.xl?.margin ?? '0', 
-    padding: theme.pipelinesolucoes?.safeArea?.xl?.padding ?? '0' }, 
+    padding: theme.pipelinesolucoes?.safeArea?.xl?.padding ?? '0',
+    maxWidth: theme.pipelinesolucoes?.safeArea?.xl?.maxWidth ?? '100%', 
+  }, 
+    
+
 }));
